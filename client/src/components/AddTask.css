@@ -1,0 +1,43 @@
+.add-task-wrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 8px;
+}
+
+.add-task-wrapper__form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    border: thin solid gray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.add-task-wrapper__input {
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    height: 55px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.add-task-wrapper__btn-submit {
+    line-height: 39px;
+    border: none;
+    border-right: thin solid gray;
+    width: 90px;
+    height: 55px;
+    background-color: #60A5FA;
+    cursor: pointer;
+    
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.add-task-wrapper__btn-submit:hover {
+    background-color: #3B82F6;
+    color: white;
+}
