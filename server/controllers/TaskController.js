@@ -16,7 +16,7 @@ exports.store = async function(req, res) {
 }
 
 exports.update = async function(req, res) {
-    const updateResult = await Task.updateOne({ _id: req.params.id}, { body: "خداحافظ"})
+    const updateResult = await Task.updateOne({ _id: req.params.id}, { status: req.body.status})
     if( updateResult.matchedCount > 0 ) {
         return res.send(updateResult)
     } else {
